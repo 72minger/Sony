@@ -1,0 +1,28 @@
+<script type="text/html" id="newList">
+    {{each list item i}}
+    <li>
+        <a href="/html/detail.html?id={{ item.id }}">
+            <div class="newPro">
+                <div class="txtC">
+                    <h3 class="title">
+                        {{ item.title }}
+                        <br>
+                        <span class="series">{{ item.series }}</span>
+                    </h3>
+                    <p class="vice">
+                        {{ item.vice }}
+                        <br>
+                        <span>火热销售</span> 
+                    </p>
+                    <p class="price-pro">
+                        RMB
+                        <span class="money">{{ item.price }}</span>
+                    </p>
+                </div>
+
+                <img src="{{ item.img }}" alt="{{ item.title }}">
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>

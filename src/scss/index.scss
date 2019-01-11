@@ -8,10 +8,21 @@
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    z-index: 97;
     .slide-container{
-        height: 700px;
+        height: 800px;
         margin: 0 auto;
+    }
+    ul{
+        height: 800px;
+        position: absolute;
+        li{
+            height: 800px;
+            float: left;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
     .arrow-left{
         background: url(/images/arrows_l.png) no-repeat 0 -82px;
@@ -32,5 +43,111 @@
         width: 38px;
         height: 66px;
         z-index: 9;
+    }
+    .navTabArea{
+        width: 1210px;
+        height: 68px;
+        margin: 0 auto;
+        a{
+            width: 33%;
+            height: 58px;
+            border-bottom: 3px solid #999999;
+            cursor: pointer;
+            position: relative;
+            color: #000;
+            float: left;
+            h3{
+                text-align: left;
+                font-size: 14px;
+                padding-top: 10px;
+            }
+        }
+        .active{
+            color: #0a83d6;
+            border-bottom: 3px solid #0a83d6;
+            background: url(/images/kvdown_arrow.png) no-repeat left top;
+        }
+        .mrt5{
+            margin-right: 5px;
+        }
+    }
+}
+
+.navTabArea{
+    width: 1210px;
+    height: 68px;
+    margin: 0 auto;
+    a{
+        width: 33%;
+        height: 58px;
+        border-bottom: 3px solid #999999;
+        cursor: pointer;
+        position: relative;
+        color: #000;
+        float: left;
+        h3{
+            text-align: left;
+            font-size: 14px;
+            padding-top: 10px;
+        }
+    }
+    .active{
+        color: #0a83d6;
+        border-bottom: 3px solid #0a83d6;
+        background: url(/images/kvdown_arrow.png) no-repeat left top;
+    }
+    .mrt5{
+        margin-right: 5px;
+    }
+}
+
+.newProduct{
+    width: 100%;
+    margin-bottom: 40px;
+    .newProduct-main{
+        width: 1210px;
+        margin: 0 auto;
+        h2{
+            font-size: 24px;
+            padding: 20px 0;
+            font-weight: normal;
+            overflow: hidden;
+        }
+        ul{
+            height: 470px;
+            li{
+                width: 295px;
+                height: 470px;
+                float: left;
+                margin-right: 10px;
+                .newPro{
+                    position: relative;
+                    .txtC{
+                        position: absolute;
+                        top: 30px;
+                        left: 10px;
+                        z-index: 11;
+                        h3{
+                            text-align: left;
+                            padding: 5px 0;
+                            color: #333333 !important;
+                            font-size: 24px;
+                            font-weight: normal;
+                        }
+                        .vice{
+                            color: #666666;
+                            margin: 5px 0;
+                            font-size: 16px;
+                        }
+                        .price-pro{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            & li:last-child{
+                margin: 0;
+            }
+        }
     }
 }

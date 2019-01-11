@@ -1,0 +1,286 @@
+@import "./component/header.scss";
+@import "./component/footer.scss";
+@import "./component/focus-us.scss";
+@import "./common.scss";
+
+.shop-cont{
+    width: 100%;
+    background: #f5f5f5;
+    padding-bottom: 50px;
+    .shop-m{
+        width: 100%;
+        .cart-top{
+            padding: 59px 0px 0px;
+            .step1{
+                height: 38px;
+                padding-left: 14px;
+                font-size: 24px;
+                line-height: 38px;
+                color: #000000;
+                background: url(/images/progress.png) right top no-repeat;
+            }
+        }
+
+        .shop-intro{
+            padding: 46px 0 20px;
+            border-bottom: 3px solid #cccccc;
+            p{
+                font-size: 16px;
+                color: #585858;
+                line-height: 18px;
+                float: right;
+                padding-right: 5px;
+            }
+        }
+
+        .Blurb{
+            width: 100%;
+            padding: 25px 0 30px 0;
+            .sp-name{
+                color: #262626;
+                font-size: 16px;
+                float: left;
+                width: 562px;
+            }
+            .sp-price{
+                color: #262626;
+                font-size: 16px;
+                float: left;
+                width: 192px;
+            }
+            .sp-num{
+                color: #262626;
+                font-size: 16px;
+                float: left;
+                width: 128px;
+                text-align: center;
+            }
+            .sp-total{
+                color: #262626;
+                font-size: 16px;
+                float: left;
+                width: 230px;
+                text-align: center;
+            }
+            .sp-opera{
+                color: #a6a6a6;
+                font-size: 16px;
+                float: left;
+            }
+        }
+
+        .shop-con{
+            width: 100%;
+            .shop-item{
+                width: 100%;
+                background: #ffffff;
+                padding: 45px 0px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+                .shop-ti-intro {
+                    width: 1140px;
+                    margin: 0 auto;
+                    margin-bottom: 22px;
+                    border-bottom: 1px solid #b4b2b2;
+                }
+                .shop-cart {
+                    width: 1140px;
+                    margin: 0 auto;
+                    position: relative;
+                    .cart-name {
+                        color: #262626;
+                        font-size: 16px;
+                        float: left;
+                        width: 522px;
+                        .cart-pic {
+                            width: 114px;
+                            border: 1px solid #e5e5e5;
+                            float: left;
+                            position: relative;
+                            img{
+                                width: 100%;  
+                            }
+                        }
+                        .cart-com {
+                            width: 340px;
+                            margin-left: 14px;
+                            float: left;
+                            color: #333333;
+                            font-size: 16px;
+                            padding-bottom: 3px;
+                        }
+                    }
+
+                    .cart-price {
+                        color: #262626;
+                        font-size: 16px;
+                        float: left;
+                        width: 192px;
+                        .c-price {
+                            color: #706f6f;
+                            font-size: 16px;
+                            font-family: Arial;
+                        }
+                    }
+
+                    .cart-num {
+                        color: #262626;
+                        font-size: 16px;
+                        float: left;
+                        width: 128px;
+                        text-align: center;
+                        .num-m {
+                            height: 32px;
+                            border: 1px solid #cecece;
+                            background: #ffffff;
+                            width: 106px;
+                            margin: 0 auto;
+                            margin-top: -5px;
+                            .reduce{
+                                display: block;
+                                width: 32px;
+                                height: 100%;
+                                line-height: 100%;
+                                background: url(/images/reduce.gif) center center no-repeat #f1f4f9;
+                                float: left;
+                            }
+                            .num-p{
+                                width: 40px;
+                                height: 100%;
+                                float: left;
+                                display: block;
+                                border-left: 1px solid #cecece;
+                                border-right: 1px solid #cecece;
+                                color: #fff;
+                                input{
+                                    background: none;
+                                    border: 0 none;
+                                    padding: 7px 0px 0px;
+                                    width: 100%;
+                                    text-align: center;
+                                    color: #706f6f;
+                                    font-size: 14px;
+                                }
+                            }
+                            .add{
+                                display: block;
+                                width: 32px;
+                                height: 100%;
+                                text-align: center;
+                                line-height: 100%;
+                                background: url(/images/add.gif) center center no-repeat #f1f4f9;
+                                float: left;
+                            }
+                        }
+                    }
+
+                    .cart-total {
+                        color: #262626;
+                        font-size: 16px;
+                        float: left;
+                        width: 230px;
+                        text-align: center;
+                        .c-total{
+                            padding-right: 64px;
+                            text-align: right;
+                            color: #0a83d7;
+                            font-size: 16px;
+                            font-family: Arial;
+                        }
+                    }
+
+                    .cart-opera {
+                        color: #a6a6a6;
+                        font-size: 16px;
+                        float: left;
+                        .topool {
+                            color: #a6a6a6;
+                            font-size: 12px;
+                            line-height: 16px;
+                            display: block;
+                        }
+
+                        .cp_del {
+                            color: #a6a6a6;
+                            font-size: 12px;
+                            line-height: 16px;
+                            display: block;
+                            margin-top: 24px;
+                            background: url(/images/cp_del.png) left center no-repeat;
+                            padding-left: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shop-total{
+    width: 100%;
+    background: #FFFFFF;
+    padding: 30px 0 25px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+    .spt{
+        width: 1140px;
+        margin: 0 auto;
+        .spt-c{
+            padding-bottom: 22px;
+            border-bottom: 1px dashed #999999;
+        }
+
+        .spt-con{
+            padding-top: 30px;
+            height: 51px;
+            .tobug{
+                display: block;
+                width: 210px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                color: #ffffff;
+                font-size: 20px;
+                float: right;
+                background: #0a83d7;
+                margin-left: 25px;
+            }
+
+            .spt-p-con{
+                float: right;
+                color: #0a83d7;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.shop-no{
+    width: 100%;
+    padding: 80px 0 50px;
+    .no-img{
+        width: 133px;
+        margin: 0 auto;
+    }
+
+    .no-tips{
+        width: 100%;
+        text-align: center;
+        color: #5a5a5a;
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .no-intro{
+        padding-top: 22px;
+        text-align: center;
+        a{
+            color: #0a83d7;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+    }
+}

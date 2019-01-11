@@ -1,0 +1,133 @@
+
+<script type="text/html" id="Detail">
+    {{each list item i}}
+    <div class="pro-list clearfix">
+            <div class="prolist">
+                <div class="M-product">
+                    <div class="M-pro">
+                        <img src="{{ item.img }}" alt="">
+                    </div>
+                </div>
+    
+                <div class="S-prolist clearfix">
+                    <div class="scroll-left"></div>
+                    <div class="S-prolists clearfix">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="{{ item.img }}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:;">
+                                        <img src="{{ item.img }}" alt="">
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:;">
+                                        <img src="{{ item.img }}" alt="">
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="{{ item.img }}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:;">
+                                        <img src="{{ item.img }}" alt="">
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="javascript:;">
+                                        <img src="{{ item.img }}" alt="">
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="scroll-right"></div>
+                </div>
+            </div>
+    
+            <div class="product-contest">
+                <h1 class="product-name">{{ item.title }}</h1>
+                <div class="product-fecture">{{ item.fecture }}</div>
+                <div class="buy-zone clearfix">
+                    <div class="price-n">
+                        <p class="tn">价格</p>
+                        <div class="t-con">
+                            <span>RMB {{ item.price }}</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="select-zone clearfix">
+                    <div class="spec-z clearfix">
+                        <p class="tn">规格</p>
+                        <div class="t-con">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">NW-ZX300</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="color-z clearfix">
+                        <p class="tn">颜色</p>
+                        <div class="t-con">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span>
+                                            <img src="/images/color_icon_black_30x30.gif" alt="">
+                                            <strong>黑</strong>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="num-z clearfix">
+                        <p>数量</p>
+                        <div class="t-con">
+                            <div class="num-m">
+                                <a href="javascript:;" class="reduce"></a>
+                                <span class="num-p">
+                                    <input type="text">
+                                </span>
+                                <a href="javascript:;" class="add"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="dinggou-zone">
+                    <div class="dinggou-z clearfix">
+                        <p class="tn">&nbsp;</p>
+                        <div class="t-con">
+                            <a href="javascript:;" class="buybtn">
+                                <img src="/images/button_cartaddition_big.png">
+                            </a>
+                            <a href="javascript:;" class="addwish">
+                                <img src="/images/addwish.png">
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="other-z">
+                        <p class="tn">其他</p>
+                        <div class="t-con">
+                            <img src="/images/others_prolong.jpg" alt="">
+                            <a href="#">
+                                <p>完成产品注册，获机身免费延长一年保修→</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        {{/each}}
+</script>

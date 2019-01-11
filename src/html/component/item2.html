@@ -1,0 +1,35 @@
+<script type="text/html" id="List">
+    {{each list item i}}
+    <li class="product-list">
+        <div class="block-item-div">
+            <div class="product-camera-box">
+                <a href="/html/detail.html?id={{ item.id }}">
+                    <div class="img-box">
+                        <img class='img' src="{{ item.img }}" data-id="{{ item.id }}">
+                    </div>
+                </a>
+            </div>
+            <div class="product-list-color">
+                <span></span>
+            </div>
+            <div class="price9">
+                <div class="product-detail">
+                    <a class='series' href="#" target="blank">{{ item.series }}</a>
+                </div>
+                <p class="pd-price clearfix">
+                    <sapn class="fl pd-p">
+                        RMB
+                        <span class="price">{{ item.price }}</span>
+                    </sapn>
+                </p>
+            </div>
+            <div class="product-list-show">
+                <div class="transparent-btm">
+                    <a href="javascript:;" class="heart"></a>
+                    <a href="javascript:;" class="mart"></a>
+                </div>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>

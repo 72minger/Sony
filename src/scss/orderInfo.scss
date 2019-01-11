@@ -1,0 +1,152 @@
+@import "./component/header.scss";
+@import "./component/footer.scss";
+@import "./component/focus-us.scss";
+@import "./common.scss";
+
+// .clear-both{
+//     clear: both;
+//     overflow: hidden;
+//     display: block;
+// }
+// .login-succ-tit{
+//     position: relative;
+//     font-family: 'å¾®è½¯é›…é»‘', Arial;
+//     font-size: 24px;
+//     color: #000000;
+//     background: #ffffff;
+// }
+// .close{
+//     position: absolute;
+//     right: 0;
+//     top: 10px;
+// }
+// .error-tip{
+//     position: absolute;
+//     top: 38px;
+//     left: -1px;
+//     background: url(/images/error_iocn.png) 4px center no-repeat #ffe1ba;
+//     line-height: 18px;
+//     font-size: 12px;
+//     color: #ff481e;
+//     padding-left: 26px;
+//     padding-right: 6px;
+//     width: 282px;
+//     border: 1px solid #ff701b;
+//     z-index: 100;
+// }
+// .error-tip1{
+//     position: static;
+// }
+// .login-success-btn{
+//     text-align: center;
+//     width: 100%;
+//     .login-close{
+//         display: block;
+//         width: 100%;
+//         text-align: center;
+//         height: 48px;
+//         line-height: 48px;
+//         background: #1e95f1;
+//         color: #ffffff;
+//         font-size: 20px;
+//         font-family: "å¾®è½¯é›…é»‘", Arial;
+//     }
+// }
+
+// .login-success{
+//     top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+//     z-index: 9999;
+//     max-width: 558px;
+//     background: #ffffff;
+
+//     .login-succ-con{
+//         padding-bottom: 14px;
+//         background: #ffffff;
+//         position: relative;
+//         .pads{
+//             padding-top: 70px;
+//             overflow: hidden;
+//             display: block;
+//             clear: both;
+//         }
+//         .pads1{
+//             padding-top: 26px;
+//             overflow: hidden;
+//             display: block;
+//             clear: both;
+//         }
+//         .login-succ-conx{
+//             width: 316px;
+//             margin: 0 auto;
+//             color: #64c3f1;
+//             font-size: 14px;
+//             font-family: 'å¾®è½¯é›…é»‘', Arial;
+//             text-align: left;
+//         }
+//         .zhanghao,.mima{
+//             margin-bottom: 10px;
+//             border: 1px solid #bdbdbd;
+//             position: relative;
+//             height: 46px;
+//             input{
+//                 font-family: "å¾®è½¯é›…é»‘", Arial;
+//                 padding-left: 11px;
+//                 padding-top: 15px;
+//                 padding-bottom: 15px;
+//                 float: left;
+//                 background: none;
+//                 border: 0 none;
+//             }
+//         }
+//         .login-info{
+//             width: 100%;
+//             .remme{
+//                 float: left;
+//                 color: #bfbfbf;
+//                 font-size: 14px;
+//             }
+//             a{
+//                 float: right;
+//                 color: #bfbfbf;
+//             }
+//         }
+//         .i1{
+//             display: block;
+//             width: 48px;
+//             height: 100%;
+//             border-right: 1px solid #bdbdbd;
+//             background: url(/images/usr.png) center center no-repeat #f3f3f3;
+//             float: left;
+//         }
+//         .i2{
+//             background: url(/images/pass.png) center center no-repeat #f3f3f3;
+//         }
+//         .i3{
+//             background: url(/images/email.png) center center no-repeat #f3f3f3;
+//         }
+//         .i4{
+//             background: url(/images/tel.png) center center no-repeat #f3f3f3;
+//         }
+//     }
+
+//     .login-zone,.register-zone{
+//         width: 100%;
+//         padding-bottom: 30px;
+//         .t-bt{
+//             width: 90%;
+//             img{
+//                 width: 50%;
+//                 float: left;
+//             }
+//         }
+//         .del{
+//             display: block;
+//             color: #d0d0d0;
+//             font-size: 23px;
+//             position: absolute;
+//             right: 4px;
+//             top: 6px;
+//             cursor: pointer;
+//         }
+//     }
+// }
