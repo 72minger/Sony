@@ -28,7 +28,7 @@ define(["jquery","url","cookie"], ($,url) => {
 					$(".register-zone").attr("style","display:none");
 					$("body").append("<div class='b-modal __b-popup1__' style='background-color: rgb(0, 0, 0); position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; opacity: 0.7; cursor: pointer;'></div>")
 				}else{
-					console.log($(".login-btn"));
+					// console.log($(".login-btn"));
 					$("body").append("<div class='b-modal __b-popup1__' style='background-color: rgb(0, 0, 0); position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; opacity: 0.7; cursor: pointer;'></div>")
 					$("body").append(`<div id='login' class='login-success' style='display:block'>
 						<div class='login-zone'>
@@ -143,7 +143,7 @@ define(["jquery","url","cookie"], ($,url) => {
 		}
 		register(){
 			let _this = this;
-			console.log($(".register-btn")[0]);
+			// console.log($(".register-btn")[0]);
 			$(".register-btn").on("click",function(){
 				if($("#login").length > 0){
 					$("#login").attr("style","display:block");
@@ -263,7 +263,7 @@ define(["jquery","url","cookie"], ($,url) => {
 		}
 		//登录注册框关闭
 		close(){
-			console.log($(".close")[0]);
+			// console.log($(".close")[0]);
 			$(".close").on("click",function(){
 				$("#login").attr("style","display:none");
 				$(".b-modal").remove();
@@ -409,13 +409,13 @@ define(["jquery","url","cookie"], ($,url) => {
 						password : pwd.val(),
 					},(res) => {
 						console.log(res);
-						if(res.res_code){
+						if(res.res_code === 1){
 							console.log(11);
-							if(check){
-								$.cookie("user", JSON.stringify(res.res_body), {path: "/", expires: 3});   
-							}else{
-								$.cookie("user", JSON.stringify(res.res_body), {path: "/"});
-							}
+							// if(check){
+							// 	$.cookie("user", JSON.stringify(res.res_body), {path: "/", expires: 3});   
+							// }else{
+							// 	$.cookie("user", JSON.stringify(res.res_body), {path: "/"});
+							// }
 							//登陆成功隐藏登陆框
 							$(".b-modal").remove();
 							$("#login").attr("style","display:none");
@@ -434,6 +434,7 @@ define(["jquery","url","cookie"], ($,url) => {
 				location.href = '/html/shopping.html'
 			})
 		}
+		//改变头部购物车图标的商品数量
 		cartNum(){
 			let count = $('.commodityNum'),
 				comNum = 0,
@@ -444,6 +445,7 @@ define(["jquery","url","cookie"], ($,url) => {
 				count.text(comNum);
 			})
 		}
+		
 	}
 	return new Header();
 })

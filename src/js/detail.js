@@ -8,26 +8,58 @@ require(["./require-config"], () => {
 		 let  proId = location.href.slice(-1);
 		//  console.log(proId);
 
+		//请求数据
+		$.ajax({
+			url : url.baseUrlRap + "/detail",
+			type : "get",
+			success : function(res){
+				if(res.res_code === 1){
+					let html = template('Detail',{list: res.res_body.data});
 
-		//改变商品数量
-		let numCount = $('.numCount');
-		$('.reduce').on('click',function(){
-			if(!(Number(numCount.val()) <= 1)){
-				numCount.val(Number(numCount.val()) - 1);
-			}
+					$("#detailP").html(html);
+
+					//改变商品数量
+					let numCount = $('.numCount');
+					$('.reduce').on('click',function(){
+						if(!(Number(numCount.val()) <= 1)){
+							numCount.val(Number(numCount.val()) - 1);
+						}
+					})
+
+					$('.add').on('click',function(){
+						numCount.val(Number(numCount.val()) + 1);
+					})
+
+					//添加购物车
+					console.log($('.buybtn'));
+					$('.buybtn').on('click',function(){
+						getCookie();
+						//改变头部购物车图标的商品数量
+						cartNum();
+					})
+				}
+			} 
 		})
 
-		$('.add').on('click',function(){
-			numCount.val(Number(numCount.val()) + 1);
-		})
+		// //改变商品数量
+		// let numCount = $('.numCount');
+		// $('.reduce').on('click',function(){
+		// 	if(!(Number(numCount.val()) <= 1)){
+		// 		numCount.val(Number(numCount.val()) - 1);
+		// 	}
+		// })
 
-		//添加购物车
-		console.log($('.buybtn'));
-		$('.buybtn').on('click',function(){
-			getCookie();
-			//改变头部购物车图标的商品数量
-			cartNum();
-		})
+		// $('.add').on('click',function(){
+		// 	numCount.val(Number(numCount.val()) + 1);
+		// })
+
+		// //添加购物车
+		// console.log($('.buybtn'));
+		// $('.buybtn').on('click',function(){
+		// 	getCookie();
+		// 	//改变头部购物车图标的商品数量
+		// 	cartNum();
+		// })
 
 		//获取cookie数据
 		function getCookie(){

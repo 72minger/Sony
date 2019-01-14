@@ -42,37 +42,37 @@ define(["jquery", "template"], ($, template) => {
             // console.log($('.img').attr('data-id'))
             let len = $('.mart').length,
                 mart = $('.mart');
-            console.log(len);
-            // for(let p = 0; p < len; p++){
-            //     $(mart).eq[p].on('click',function(){
-            //         //得到商品id、名称、价格、数量、图片地址
-            //         let id = $(this).parents('li').find('.img').attr('data-id'),
-            //         name = $('.series').text(),
-            //         price = $('.price').text(),
-            //         num = 1,
-            //         imgAdd = $('.img').attr('src'),
-            //         detail ={
-            //             id,name,price,num,imgAdd
-            //         };
-            //         _this.addCookie(detail);
-            //         _this.cartNum();
-            //         console.log(id);
-            //     })
-            // }
-            $('.mart').on('click',function(){
-                //得到商品id、名称、价格、数量、图片地址
-                let id = $(this).parents('li').find('.img').attr('data-id'),
-				name = $('.series').text(),
-				price = $('.price').text(),
-				num = 1,
-				imgAdd = $('.img').attr('src'),
-				detail ={
-					id,name,price,num,imgAdd
-				};
-                _this.addCookie(detail);
-                _this.cartNum();
-                console.log(id);
-            })
+            console.log(mart);
+            for(let p = 0; p < len; p++){
+                $(mart).eq(p).on('click',function(){
+                    //得到商品id、名称、价格、数量、图片地址
+                    let id = $(this).parents('li').find('.img').attr('data-id'),
+                    name = $(this).parents('li').find('.series').text(),
+                    price = $(this).parents('li').find('.price').text(),
+                    num = 1,
+                    imgAdd = $(this).parents('li').find('.img').attr('src'),
+                    detail ={
+                        id,name,price,num,imgAdd
+                    };
+                    _this.addCookie(detail);
+                    _this.cartNum();
+                    console.log(id);
+                })
+            }
+            // $('.mart').on('click',function(){
+            //     //得到商品id、名称、价格、数量、图片地址
+            //     let id = $(this).parents('li').find('.img').attr('data-id'),
+			// 	name = $('.series').text(),
+			// 	price = $('.price').text(),
+			// 	num = 1,
+			// 	imgAdd = $('.img').attr('src'),
+			// 	detail ={
+			// 		id,name,price,num,imgAdd
+			// 	};
+            //     _this.addCookie(detail);
+            //     _this.cartNum();
+            //     console.log(id);
+            // })
         }
 
         addCookie(obj){
@@ -97,7 +97,7 @@ define(["jquery", "template"], ($, template) => {
 				arrCookie = JSON.parse($.cookie('cart'));
 			
 			$.each(arrCookie,function(index,value){
-				console.log(arrCookie[index].num);
+				// console.log(arrCookie[index].num);
 				comNum += parseInt(arrCookie[index].num);
 				count.text(comNum);
 			})

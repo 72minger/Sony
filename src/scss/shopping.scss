@@ -24,6 +24,7 @@
         .shop-intro{
             padding: 46px 0 20px;
             border-bottom: 3px solid #cccccc;
+            display: none;
             p{
                 font-size: 16px;
                 color: #585858;
@@ -36,6 +37,7 @@
         .Blurb{
             width: 100%;
             padding: 25px 0 30px 0;
+            display: none;
             .sp-name{
                 color: #262626;
                 font-size: 16px;
@@ -71,6 +73,7 @@
 
         .shop-con{
             width: 100%;
+            display: none;
             .shop-item{
                 width: 100%;
                 background: #ffffff;
@@ -112,10 +115,12 @@
                     }
 
                     .cart-price {
-                        color: #262626;
+                        color: #706f6f;;
                         font-size: 16px;
                         float: left;
                         width: 192px;
+                        display: flex;
+                        font-family: Arial;
                         .c-price {
                             color: #706f6f;
                             font-size: 16px;
@@ -175,15 +180,14 @@
                     }
 
                     .cart-total {
-                        color: #262626;
+                        color: #0a83d7;
                         font-size: 16px;
                         float: left;
                         width: 230px;
-                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        font-family: Arial;
                         .c-total{
-                            padding-right: 64px;
-                            text-align: right;
-                            color: #0a83d7;
                             font-size: 16px;
                             font-family: Arial;
                         }
@@ -225,6 +229,7 @@
     bottom: 0;
     z-index: 999;
     border-top: 1px solid #ccc;
+    display: none;
     .spt{
         width: 1140px;
         margin: 0 auto;
